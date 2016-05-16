@@ -25,7 +25,8 @@ libraryDependencies ++= Seq(
   "com.h2database" % "h2" % "1.4.188",
   cache,
   evolutions,
-  filters
+  filters,
+  "mysql" % "mysql-connector-java" % "5.1.34"
 )
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
